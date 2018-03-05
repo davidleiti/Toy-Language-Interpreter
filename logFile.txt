@@ -1,0 +1,42 @@
+Execution stack:
+( v = 10 ; ( new(a, 20) ; ( fork(( writeHeap(a, 30) ; ( v = 40 ; ( Print(v) ; Print(rH(a)) ) ) )) ; ( v = 50 ; ( Print(v) ; Print(rH(a)) ) ) ) ) )
+Symbol table:
+Output:
+File table:
+Heap:
+
+Execution stack:
+v = 10
+( new(a, 20) ; ( fork(( writeHeap(a, 30) ; ( v = 40 ; ( Print(v) ; Print(rH(a)) ) ) )) ; ( v = 50 ; ( Print(v) ; Print(rH(a)) ) ) ) )
+Symbol table:
+Output:
+File table:
+Heap:
+
+Execution stack:
+( new(a, 20) ; ( fork(( writeHeap(a, 30) ; ( v = 40 ; ( Print(v) ; Print(rH(a)) ) ) )) ; ( v = 50 ; ( Print(v) ; Print(rH(a)) ) ) ) )
+Symbol table:
+v -> 10
+Output:
+File table:
+Heap:
+
+Execution stack:
+new(a, 20)
+( fork(( writeHeap(a, 30) ; ( v = 40 ; ( Print(v) ; Print(rH(a)) ) ) )) ; ( v = 50 ; ( Print(v) ; Print(rH(a)) ) ) )
+Symbol table:
+v -> 10
+Output:
+File table:
+Heap:
+
+Execution stack:
+( fork(( writeHeap(a, 30) ; ( v = 40 ; ( Print(v) ; Print(rH(a)) ) ) )) ; ( v = 50 ; ( Print(v) ; Print(rH(a)) ) ) )
+Symbol table:
+a -> 2
+v -> 10
+Output:
+File table:
+Heap:
+2 -> 20
+
